@@ -5,7 +5,7 @@
 body {
     background-color: var(--bg);
     color: #1a1a1a;
-    font-family: 'is serif', sans-serif,'Courier New', Courier, monospace,'Times New Roman', Times, serif,Georgia, 'Times New Roman', Times, serif;
+    font-family: 'is sans-serif','is serif', sans-serif,'Courier New', Courier, monospace,'Times New Roman', Times, serif,Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
@@ -36,10 +36,21 @@ nav ul{
     justify-content:center;
     align-items:center;
 }
-nav.navbar li {
-    margin: 0;
-    padding: 0;
+/* Make sure the social media icons have a margin between the other links*/
+div.social-icons{
+    margin-left:10%; 
 }
+.social-icons{
+ display:flex;
+    flex-direction:row;
+    
+    justify-content:center;
+    align-items:center;   
+}
+
+ .be{
+    font-size:24px;
+ }
 
 nav.navbar a {
     color: #fff;
@@ -67,4 +78,28 @@ button{
     &:hover {
         background-color:#2e6b00;
     }
+}
+.fa-linkedin, .fab {
+    font-size: 24px;
+    background-color: var(--bgNav); /* LinkedIn blue */
+}
+/*Main part with the lets get started and Picture */
+.project{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:70%;
+    margin:20px auto;
+}
+h2{
+    font-size:36px;
+    margin-bottom:10px;
+    color:white;
+}
+img{
+    border-radius: 50%;
+ height: 250px;
+ width: 250px;
+ 
 }
