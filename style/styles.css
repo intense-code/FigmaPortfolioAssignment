@@ -1,0 +1,70 @@
+:root {
+    --bg: #080808;
+    --bgNav:#1b1b1b
+}
+body {
+    background-color: var(--bg);
+    color: #1a1a1a;
+    font-family: 'is serif', sans-serif,'Courier New', Courier, monospace,'Times New Roman', Times, serif,Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    width:90%;
+    height: 100%;
+    padding:10px 20px;
+    background-color: var(--bgNav);
+    
+    margin: 0 auto;
+    border:solid 1px var(--bgNav);
+    border-radius: 5px;
+}
+nav.navbar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    padding:0;
+    margin:0;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+nav.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 1s;
+}
+
+nav.navbar a:hover {
+    background: #3f8e00;
+    color: #fff;
+}
+button{
+    background-color:#3f8e00;
+    color:white;
+    border:none;
+    padding:10px;   
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:background-color 0.3s;
+    &:hover {
+        background-color:#2e6b00;
+    }
+}
