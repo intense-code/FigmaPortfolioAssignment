@@ -86,6 +86,7 @@ button{
     font-size: 24px;
     background-color: var(--bgNav); /* LinkedIn blue */
 }
+ 
 /*Main part with the lets get started and Picture */
 .project{
     display:flex;
@@ -101,8 +102,51 @@ h2{
     margin-bottom:10px;
     color:white;
 }
-img{
+.imgpic{
     border-radius: 50%;
  height: 250px;
  width: 250px;
 }
+/* Footer styles */
+.footer-content{
+    border:solid 2px var(--bgNav);
+    width:70%;
+    height:80px;
+    border-radius: 3px;
+    margin:5px;
+     
+}
+.footer-content h3{
+    color:white;
+    text-align:left;
+    margin:5px;
+    padding-top:10px;
+}
+footer{
+     display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 60px;
+    width: 70%;
+    margin: 20px auto;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+}  
+.footman{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+}   
+footer.footman{
+   width:70%;
+    margin:20px auto;
+    height:100%;
+    }
