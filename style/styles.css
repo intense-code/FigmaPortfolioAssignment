@@ -1,0 +1,152 @@
+:root {
+    --bg: #080808;
+    --bgNav:#1b1b1b
+}
+body {
+    background-color: var(--bg);
+    color: #302b2b;
+    font-family: 'is sans-serif','is serif', sans-serif,'Courier New', Courier, monospace,'Times New Roman', Times, serif,Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+header nav{
+    width:90%;
+    height: 100%;
+    padding:10px 20px;
+    background-color: var(--bgNav);
+    
+    margin: 0 auto;
+    border:solid 1px var(--bgNav);
+    border-radius: 5px;
+}
+nav.navbar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    height:100%;
+    padding:5px;
+    margin:5px;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+/* Make sure the social media icons have a margin between the other links*/
+div.social-icons{
+    margin-left:10%; 
+}
+.social-icons{
+ display:flex;
+    flex-direction:row;
+    
+    justify-content:center;
+    align-items:center;   
+}
+
+ .be{
+    font-size:24px;
+ }
+
+nav.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 1s;
+}
+
+nav.navbar a:hover {
+    background: #3f8e00;
+    color: #fff;
+}
+button{
+     width:320px;
+    background-color:#3f8e00;
+    color:white;
+    border:none;
+    padding:10px;   
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:background-color 0.3s;
+    &:hover {
+        background-color:#2e6b00;
+    }
+}
+.fa-linkedin, .fab {
+    font-size: 24px;
+    background-color: var(--bgNav); /* LinkedIn blue */
+}
+ 
+/*Main part with the lets get started and Picture */
+.project{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:40px;
+    align-items:center;
+    width:70%;
+    margin:20px auto;
+}
+h2{
+    font-size:36px;
+    margin-bottom:10px;
+    color:white;
+}
+.imgpic{
+    border-radius: 50%;
+ height: 250px;
+ width: 250px;
+}
+/* Footer styles */
+.footer-content{
+    border:solid 2px var(--bgNav);
+    width:70%;
+    height:80px;
+    border-radius: 3px;
+    margin:5px;
+     
+}
+.footer-content h3{
+    color:white;
+    text-align:left;
+    margin:5px;
+    padding-top:10px;
+}
+footer{
+     display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 60px;
+    width: 70%;
+    margin: 20px auto;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+}  
+.footman{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+}   
+footer.footman{
+   width:70%;
+    margin:20px auto;
+    height:100%;
+    }
